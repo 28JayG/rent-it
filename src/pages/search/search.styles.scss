@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints.scss";
+
 .search-screen {
   padding: 34px 0;
   display: flex;
@@ -18,5 +20,31 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .search-screen {
+    width: 92vw;
+
+    .search-results {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-lg-min) {
+  .search-screen {
+    .categories {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm-min) {
+  .search-screen {
+    .search-results {
+      grid-template-columns: 1fr;
+    }
   }
 }
