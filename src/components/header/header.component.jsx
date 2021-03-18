@@ -7,16 +7,18 @@ import "./header.styles.scss";
 
 const Header = () => {
   return (
-    <div className="header-container">
-      <div className="logo-container">
-        <img src={Logo} alt="brand logo" />
+    <div className='header-wrapper'>
+      <div className="header-container">
+        <div className="logo-container">
+          <img src={Logo} alt="brand logo" />
+        </div>
+        <ul>
+          <li>Hi Jason</li>
+          <li>
+            <img src={Cart} alt="cart" />
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li>Hi Jason</li>
-        <li>
-          <img src={Cart} alt="cart" />
-        </li>
-      </ul>
     </div>
   );
 };

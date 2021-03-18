@@ -1,7 +1,11 @@
 .search-screen {
-  padding: 34px 115px;
+  padding: 34px 0;
   display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
   position: relative;
+  width: 85vw;
+  margin: 0 auto;
 
   .categories {
     position: sticky;
