@@ -1,0 +1,27 @@
+.banner-container {
+  background-color: #232730;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 115px;
+  color: white;
+  position: fixed;
+  top: 0;
+  height: 50px;
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .location-selector {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      
+      img{
+          margin-right: 8px;
+      }
+  }
+}
