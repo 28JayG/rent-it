@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (max-width: $screen-sm-min) {
+@media screen and (max-width: 655px) {
   .search-screen {
     .search-results {
       grid-template-columns: 1fr;
