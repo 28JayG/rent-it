@@ -1,0 +1,18 @@
+.search-screen {
+  padding: 34px 115px;
+  display: flex;
+  position: relative;
+
+  .categories {
+    position: sticky;
+    top: 185px;
+    left: 0;
+    margin-right: 20px;
+  }
+
+  .search-results {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

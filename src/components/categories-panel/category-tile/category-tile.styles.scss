@@ -1,0 +1,17 @@
+.category-tile {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 26px;
+  justify-items: start;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 500;
+  height: 46px;
+  width: 100%;
+
+  &:hover {
+    background-color: rgba(246, 247, 247, 0.7);
+  }
+}

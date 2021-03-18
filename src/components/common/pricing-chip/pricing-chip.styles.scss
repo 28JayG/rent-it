@@ -1,0 +1,13 @@
+.price-chip {
+  display: inline-block;
+  width: auto;
+  padding: 7px;
+  border: solid 1px #9b9b9b;
+  border-radius: 100px;
+  margin-right: 6px;
+  font-size: 12px;
+
+  &:last-child{
+      margin-right: 0;
+  }
+}

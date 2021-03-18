@@ -1,0 +1,92 @@
+@import "../../styles/colors.scss";
+
+.item-card {
+  width: 300px;
+  height: 470px;
+  background-color: white;
+  box-shadow: 0 6px 26px 0 rgba(64, 98, 127, 0.17);
+  border-radius: 6px;
+  margin: 0 auto;
+  color: $greyish-brown;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .images {
+    height: 155px;
+    width: 100%;
+  }
+
+  .product-details {
+    padding: 10px 18px 0 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+
+    .title {
+      height: 70px;
+      .name {
+        color: $ark-twod;
+        padding: 0;
+        margin: 0;
+      }
+
+      .category {
+        font-size: 12px;
+        color: $ark-twod;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+    }
+    .description {
+      font-size: 12px;
+      line-height: 17px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .pricing-details {
+      padding-bottom: 25px;
+    }
+
+    .bulk-order {
+      color: $turquoise;
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      user-select: none;
+
+      .check {
+        color: $turquoise;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .view-details {
+    background-color: white;
+    color: $ark-twod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    &:hover {
+      background-color: $turquoise;
+      color: white;
+    }
+
+    &:focus {
+      background-color: #008080;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .arrow {
+    color: #4a4a4a;
+    font-size: 19px;
+    transform: translate(0, -50%);
+    position: absolute;
+    top: 50%;
+
+    &.left {
+      left: 0;
+      margin-left: 20px;
+    }
+
+    &.right {
+      right: 0;
+      margin-right: 20px;
+    }
+  }
+}

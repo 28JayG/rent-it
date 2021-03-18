@@ -1,0 +1,45 @@
+@import "../../styles/colors.scss";
+
+.categories-panel {
+  background-color: white;
+  width: 273px;
+  height: auto;
+  padding-top: 34px;
+  padding-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0 6px 26px 0 rgba(64, 98, 127, 0.15);
+  user-select: none;
+
+  .heading {
+    padding: 0 27px;
+    h4 {
+      font-size: 16px;
+      color: $ark-twod;
+      font-weight: 600;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 18px;
+    }
+
+    hr {
+      color: #979797;
+      opacity: 0.3;
+      height: 2px;
+      width: 100%;
+    }
+  }
+
+  .category-list {
+    position: relative;
+
+    .indicator {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 46px;
+      background-color: $turquoise;
+      box-shadow: 7px 0px 28px 6px rgba(7, 201, 161, 0.35);
+    }
+  }
+}
