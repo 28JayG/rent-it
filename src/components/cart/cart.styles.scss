@@ -1,10 +1,11 @@
-@import '../../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
 .cart-section {
   display: grid;
   width: 100%;
   height: auto;
   grid-template-columns: 2fr 1fr;
+  column-gap: 80px;
 
   .cart-items {
     .rent-total-items-row {
@@ -20,6 +21,12 @@
         font-size: 20px;
         font-weight: normal;
       }
+    }
+  }
+
+  .cart-summary {
+    .d-note {
+      margin-bottom: 15px;
     }
   }
 }

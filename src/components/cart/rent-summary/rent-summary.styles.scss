@@ -1,0 +1,71 @@
+@import "../../../styles/colors.scss";
+
+.rent-summary {
+  padding: 30px 35px;
+  box-shadow: 0 3px 17px 0 rgba(86, 124, 171, 0.1);
+  background-color: #ffffff;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .enter-cupon {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+
+    .text {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      margin-right: 10px;
+      text-transform: capitalize;
+    }
+
+    .code-here {
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      color: $dark-sky-blue;
+      text-decoration: underline;
+    }
+  }
+
+  .total {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 10px;
+      text-transform: capitalize;
+    }
+
+    .total-amount {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      font-weight: 600;
+      color: $turquoise;
+    }
+  }
+
+  .toggle-details {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: $dark-sky-blue;
+    text-decoration: underline;
+  }
+}

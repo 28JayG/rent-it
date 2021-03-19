@@ -1,0 +1,41 @@
+@import "../../../../styles/colors.scss";
+
+.l-containr {
+  margin-bottom: 15px;
+  
+  .loyalty {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .points-selector {
+      display: flex;
+      width: auto;
+      align-items: center;
+
+      .point {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-transform: capitalize;
+        user-select: none;
+      }
+    }
+
+    .price {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      color: $turquoise;
+    }
+  }
+
+  .conditon {
+    color: #848796;
+    font-size: 12px;
+    margin: 0;
+  }
+}

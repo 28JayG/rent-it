@@ -1,4 +1,4 @@
-@import "../../../../../styles/colors.scss";
+@import "../../../../styles/colors.scss";
 
 .rental-details {
   display: grid;
@@ -8,7 +8,7 @@
   height: 100%;
   padding-right: 40px;
 
-  .detail {
+  & .rental-detail {
     font-size: 14px;
 
     .title {

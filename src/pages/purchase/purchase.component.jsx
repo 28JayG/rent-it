@@ -1,7 +1,7 @@
 import React from "react";
 
-import Cart from "./cart/cart.component";
-import Stepper from "./stepper/stepper.component";
+import Cart from "../../components/cart/cart.component";
+import Stepper from "../../components/stepper/stepper.component";
 
 import "./purchase.styles.scss";
 

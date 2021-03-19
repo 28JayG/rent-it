@@ -1,0 +1,21 @@
+.detail {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .point {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+
+  .price {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+}

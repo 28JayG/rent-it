@@ -1,11 +1,9 @@
 import React from "react";
-import { RUPEE_SYMBOL } from "../../../../constants/strings";
-import { colors } from "../../../../constants/colors";
 
 import ItemDetail from "./item-detial/item-detail.compnent";
+import RentalDetails from "./rental-details/rental-details.component";
 
 import "./cart-item.styles.scss";
-import RentalDetails from "./rental-details/rental-details.component";
 
 const CartItem = ({ cartItem }) => {
   return (

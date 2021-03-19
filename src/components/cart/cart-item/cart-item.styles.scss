@@ -1,4 +1,4 @@
-@import "../../../../styles/colors.scss";
+@import "../../../styles/colors.scss";
 
 .cart-item {
   width: 100%;
@@ -11,6 +11,11 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 40px;
+  }
 
   .icons-row {
     position: absolute;
@@ -21,10 +26,10 @@
     color: $ark-twod;
     opacity: 0.4;
 
-    span{
+    span {
       cursor: pointer;
-      
-      &:first-child{
+
+      &:first-child {
         margin-right: 12px;
       }
     }

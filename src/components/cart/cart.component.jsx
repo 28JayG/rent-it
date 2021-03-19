@@ -1,9 +1,11 @@
 import React from "react";
-import {RUPEE_SYMBOL} from '../../../constants/strings';
+import { RUPEE_SYMBOL } from "../../constants/strings";
 
 import CartItem from "./cart-item/cart-item.component";
 
 import "./cart.styles.scss";
+import DeliveryNote from "./delivery-note/delivery-note.component";
+import RentSummary from "./rent-summary/rent-summary.component";
 
 class Cart extends React.Component {
   render() {
@@ -20,6 +22,12 @@ class Cart extends React.Component {
             </h2>
           </div>
           <CartItem />
+        </div>
+        <div className="cart-summary">
+          <div className="d-note">
+            <DeliveryNote />
+          </div>
+          <RentSummary />
         </div>
       </section>
     );
