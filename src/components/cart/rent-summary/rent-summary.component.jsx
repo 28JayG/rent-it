@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RUPEE_SYMBOL } from "../../../constants/strings";
+import CustomButton from "../../custom-button/custom-button.component";
 
 import Detail from "./detail/detail.component";
 import LoyaltyPoints from "./loyalty-points/loyalty-points.component";
@@ -31,9 +32,10 @@ const RentSummary = ({ rentDetails }) => {
         <p className="text">Total Payable Amount</p>
         <span className="total-amount">{RUPEE_SYMBOL} 10400</span>
       </div>
-      <span className="toggle-details" onClick={toggleHideDetails}>
+      <p className="toggle-details" onClick={toggleHideDetails}>
         {hideDetails ? "Show details" : "Hide details"}
-      </span>
+      </p>
+      <CustomButton fullWidth>checkout</CustomButton>
     </div>
   );
 };
