@@ -1,0 +1,26 @@
+@import "../../../../../styles/colors.scss";
+
+.rental-details {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 30px;
+  row-gap: 26px;
+  height: 100%;
+  padding-right: 40px;
+
+  .detail {
+    font-size: 14px;
+
+    .title {
+      color: $greyish-brown;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 7px;
+    }
+
+    .deposit {
+      font-weight: 600;
+      color: $ark-twod;
+    }
+  }
+}

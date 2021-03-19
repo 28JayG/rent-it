@@ -1,8 +1,11 @@
 import { Route } from "react-router";
-import "./App.css";
+
 import ContactBanner from "./components/contact-banner/contact-banner.component";
 import Header from "./components/header/header.component";
+import Purchase from "./pages/purchase/purchase.component";
 import Search from "./pages/search/search.component";
+
+import "./App.css";
 
 function App() {
   return (
@@ -12,7 +15,8 @@ function App() {
         <Header />
       </div>
       <div className='header-clearence'/>
-      <Route path="/" component={Search} />
+      <Route path="/" exact component={Search} />
+      <Route path="/order" component={Purchase} />
     </div>
   );
 }
