@@ -7,18 +7,13 @@
   justify-content: center;
   align-items: center;
 
-  
-
   .step-connector {
     opacity: 0.4;
     margin: 0 16px;
     color: $ark-twod;
-    height: 2px;
-    width: 75px;
-    border: dashed 0.8px $ark-twod;
 
     &.connector__active {
-      border-color: $turquoise;
+      opacity: 1;
     }
   }
 }

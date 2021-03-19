@@ -1,4 +1,4 @@
-@import '../../../styles/colors.scss';
+@import "../../../styles/colors.scss";
 
 .step {
   color: $ark-twod;
@@ -6,6 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.step__complete {
+    opacity: 1;
+  }
 
   &.step__active {
     color: $turquoise;
@@ -26,6 +30,14 @@
     border: solid 0.8px $ark-twod;
     margin-right: 8px;
     border-radius: 50%;
+  }
+
+  .check {
+    width: 20px;
+    font-size: 12px;
+    height: 20px;
+    margin-right: 8px;
+    color: $turquoise;
   }
 
   .name {
