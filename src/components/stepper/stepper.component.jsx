@@ -18,6 +18,7 @@ const Stepper = ({ activeStep = 1, completedSteps = 0 }) => {
         return "Payment Options";
       case 4:
         return "Order Confirmation";
+      default:
     }
   };
 

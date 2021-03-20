@@ -1,0 +1,56 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/colors.scss';
+
+.invoice {
+  table {
+    width: 65vw;
+    margin: 40px auto;
+    text-align: center;
+
+    td {
+      padding: 30px 0;
+    }
+
+    @media screen and (max-width: $screen-lg-min) {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .invoice {
+    table {
+      thead {
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      tr {
+        display: block;
+        padding: 10px;
+        border: 1px solid $ark-twod;
+        border-radius: 4px;
+        margin-bottom: 15px;
+      }
+
+      & td {
+        display: block;
+        text-align: right;
+        padding: 0;
+        padding-bottom: 10px;
+
+        &::before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

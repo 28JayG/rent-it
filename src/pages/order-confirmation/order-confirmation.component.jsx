@@ -5,6 +5,7 @@ import OrderDetails from "../../components/order-details/order-details.component
 import { FaRegCheckCircle } from "react-icons/fa";
 
 import "./order-confirmation.styles.scss";
+import InvoiceTable from "../../components/invoice-table/invoice-table.componet";
 
 class OrderConfirmation extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class OrderConfirmation extends React.Component {
           </span>
         </div>
         <OrderDetails />
+        <InvoiceTable />
       </section>
     );
   }
