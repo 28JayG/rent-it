@@ -7,6 +7,7 @@ import Search from "./pages/search/search.component";
 
 import "./App.css";
 import OrderConfirmation from "./pages/order-confirmation/order-confirmation.component";
+import ProductView from "./pages/product-view/product-view.component";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/" exact component={Search} />
       <Route path="/order" component={Purchase} />
       <Route path="/order-confirmation" component={OrderConfirmation} />
+      <Route path="/items/:id" component={ProductView} />
     </div>
   );
 }

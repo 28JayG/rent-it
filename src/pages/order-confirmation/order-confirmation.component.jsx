@@ -2,10 +2,11 @@ import React from "react";
 
 import Stepper from "../../components/stepper/stepper.component";
 import OrderDetails from "../../components/order-details/order-details.component";
+import InvoiceTable from "../../components/invoice-table/invoice-table.componet";
+import CustomButton from "../../components/custom-button/custom-button.component";
 import { FaRegCheckCircle } from "react-icons/fa";
 
 import "./order-confirmation.styles.scss";
-import InvoiceTable from "../../components/invoice-table/invoice-table.componet";
 
 class OrderConfirmation extends React.Component {
   render() {
@@ -24,6 +25,9 @@ class OrderConfirmation extends React.Component {
         </div>
         <OrderDetails />
         <InvoiceTable />
+        <div className="go-to-order">
+          <CustomButton fullWidth>go to my order</CustomButton>
+        </div>
       </section>
     );
   }

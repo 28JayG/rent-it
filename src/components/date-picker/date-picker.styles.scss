@@ -1,0 +1,37 @@
+@import "../../styles/breakpoints.scss";
+
+.date-picker {
+  width: 100%;
+
+  p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .calender-container {
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 6px;
+    box-shadow: 2px 3px 10px 0 rgba(64, 98, 127, 0.13);
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+
+    @media screen and (max-width: $screen-xl-min) {
+      grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: $screen-lg-min) {
+      grid-template-columns: 2fr 1fr;
+    }
+    @media screen and (max-width: $screen-md-min) {
+      padding: 25px;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      padding: 5px;
+    }
+  }
+}

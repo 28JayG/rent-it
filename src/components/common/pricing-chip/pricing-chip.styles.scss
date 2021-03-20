@@ -5,9 +5,15 @@
   border: solid 1px #9b9b9b;
   border-radius: 100px;
   margin-right: 6px;
+  margin-bottom: 10px;
   font-size: 12px;
 
-  &:last-child{
-      margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.large {
+    padding: 12px 20px;
+    font-size: 16px;
   }
 }

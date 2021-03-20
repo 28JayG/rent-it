@@ -10,6 +10,18 @@
     width: 90vw;
   }
 
+  .go-to-order {
+    width: 40vw;
+    margin: 0 auto;
+
+    @media screen and(max-width: $screen-md-min) {
+      width: 70%;
+    }
+    @media screen and(max-width: $screen-sm-min) {
+      width: 100%;
+    }
+  }
+
   .order-success {
     margin-top: 55px;
     margin-bottom: 40px;

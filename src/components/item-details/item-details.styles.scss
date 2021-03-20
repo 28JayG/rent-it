@@ -1,0 +1,95 @@
+@import "../../styles/colors.scss";
+
+.item-details {
+  width: 100%;
+  margin: 0 auto;
+  color: $greyish-brown;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .images {
+    height: 250px;
+    width: 100%;
+  }
+
+  .product-details {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    max-width: 100%;
+
+    .name {
+      color: $ark-twod;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
+
+    .description {
+      text-align: left;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 0;
+      margin: 0;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
+    .rent-details-text {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    .pricing-details {
+      padding-bottom: 25px;
+    }
+
+    .bulk-order {
+      color: $turquoise;
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      user-select: none;
+
+      .check {
+        color: $turquoise;
+        font-size: 32px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .view-details {
+    background-color: white;
+    color: $ark-twod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    &:hover {
+      background-color: $turquoise;
+      color: white;
+    }
+
+    &:focus {
+      background-color: #008080;
+      color: white;
+    }
+  }
+
+  .row {
+    display: flex;
+  }
+}
