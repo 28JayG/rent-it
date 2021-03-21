@@ -11,9 +11,10 @@
 
   @media screen and (max-width: $screen-lg-min) {
     grid-template-columns: 1fr;
-  } 
-  
+  }
+
   @media screen and (max-width: $screen-md-min) {
+    margin-top: 0;
     width: 90vw;
   }
 

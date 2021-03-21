@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useWindowSize from "../../hooks/use-window-size.hook";
 import { connect } from "react-redux";
 import { FiMenu } from "react-icons/fi";
+import { FaTimes } from "react-icons/fa";
 import Logo from "../../assets/images/brand-logo.png";
 import Cart from "../../assets/images/cart.png";
 import CategoriesPanel from "../../components/categories-panel/categories-panel.component";
@@ -21,7 +22,11 @@ const Header = ({ cartItemsCount }) => {
     <div className="header-wrapper">
       <div className="header-container">
         <div className="after-small">
-          <FiMenu className="menu-button" onClick={toggleCategoriesHidden} />
+          {categoriesHidden ? (
+            <FiMenu className="menu-button" onClick={toggleCategoriesHidden} />
+          ) : (
+            <FaTimes className="menu-button" onClick={toggleCategoriesHidden} />
+          )}
           <Link to={AppRoutes.HOME}>
             <div className="logo-container">
               <img src={Logo} alt="brand logo" />
