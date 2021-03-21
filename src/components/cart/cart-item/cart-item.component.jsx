@@ -4,8 +4,11 @@ import ItemDetail from "./item-detial/item-detail.compnent";
 import RentalDetails from "./rental-details/rental-details.component";
 
 import "./cart-item.styles.scss";
+import SHOP_DATA from "../../../data/shop.data";
 
-const CartItem = ({ cartItem }) => {
+const CartItem = () => {
+  const cartItem = SHOP_DATA.tools.items[0];
+
   return (
     <div className="cart-item">
       <ItemDetail item={cartItem} />

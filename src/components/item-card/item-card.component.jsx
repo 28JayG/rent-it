@@ -10,29 +10,38 @@ import "./item-card.styles.scss";
 import "../../styles/text.styles.scss";
 
 const ItemCard = ({ item }) => {
+  const {
+    description,
+    isBulkAvailable,
+    images,
+    name,
+    category,
+    pricePerDayInPaise,
+    pricePerMonthInPaise,
+    pricePerWeekInPaise,
+  } = item;
+
   return (
     <div className="item-card">
       <div className="images">
-        <ImageCarousel />
+        <ImageCarousel images={images} />
       </div>
       <div className="product-details">
         <div className="title">
-          <span className="category">Sports and Games</span>
-          <h2 className="name ri-text-style-2">Single</h2>
+          <span className="category">{category}</span>
+          <h2 className="name ri-text-style-2">{name}</h2>
         </div>
-        <p className="description">
-          Single door fridge or refrigerator 190 Ltrs near new condition with
-          fast and effective cooling system to keep your food fresh available on
-          rent in Bangalore
-        </p>
-        <div className="bulk-order">
-          <FaCheckCircle className="check" />
-          Bulk order available
-        </div>
+        <p className="description">{description}</p>
+        {isBulkAvailable && (
+          <div className="bulk-order">
+            <FaCheckCircle className="check" />
+            Bulk order available
+          </div>
+        )}
         <div className="pricing-details">
-          <PricingChip perOf="Day" price="50000" />
-          <PricingChip perOf="Week" price="63000" />
-          <PricingChip perOf="Month" price="150000" />
+          <PricingChip perOf="Day" price={pricePerDayInPaise} />
+          <PricingChip perOf="Week" price={pricePerWeekInPaise} />
+          <PricingChip perOf="Month" price={pricePerMonthInPaise} />
         </div>
       </div>
       <Link to={`${AppRoutes.ITEMS}/4`} className="view-details">

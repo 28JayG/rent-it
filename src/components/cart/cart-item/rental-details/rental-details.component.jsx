@@ -5,18 +5,32 @@ import { RUPEE_SYMBOL } from "../../../../constants/strings";
 import "./rental-details.styles.scss";
 
 const RentalDetails = ({ cartItem }) => {
+  const {
+    description,
+    isBulkAvailable,
+    images,
+    name,
+    category,
+    pricePerDayInPaise,
+    pricePerMonthInPaise,
+    pricePerWeekInPaise,
+    depositInPaise,
+    deliveryPriceInPaise,
+  } = cartItem;
   return (
     <div className="rental-details">
       <div className="rental-detail">
         <p className="title">Refundable Deposit</p>
         <p className="deposit" style={{ color: colors.TURQUOISE }}>
-          {RUPEE_SYMBOL}4000
+          {RUPEE_SYMBOL}
+          {depositInPaise / 100}
         </p>
       </div>
       <div className="rental-detail">
         <p className="title">Delivery & Pickup</p>
         <p className="deposit" style={{ color: colors.TURQUOISE }}>
-          {RUPEE_SYMBOL}600
+          {RUPEE_SYMBOL}
+          {deliveryPriceInPaise / 100}
         </p>
       </div>
       <div className="rental-detail">

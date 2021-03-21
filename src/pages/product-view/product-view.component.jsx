@@ -12,10 +12,12 @@ import QuantityPicker from "../../components/quantity-picker/quantity-picker.com
 import CustomButton from "../../components/custom-button/custom-button.component";
 
 import "./product-view.styles.scss";
+import SHOP_DATA from "../../data/shop.data";
 
 class ProductView extends React.Component {
   state = {
     addedToCart: false,
+    item: SHOP_DATA.tools.items[0],
   };
 
   handleAddToCart = () => {
@@ -34,19 +36,19 @@ class ProductView extends React.Component {
   };
 
   render() {
-    const { addedToCart } = this.state;
+    const { addedToCart, item } = this.state;
 
     return (
       <section className="product-view">
         <div className="product-details">
-          <ItemDetails />
+          <ItemDetails item={item} />
         </div>
         <div className="fill-details">
           <div className="quantity-agegroup">
             <QuantityPicker />
             <AgeGroupPicker />
           </div>
-          <DatePicker />
+          <DatePicker item={item} />
           <div style={{ height: "20px" }} />
           <CustomButton onClick={this.handleAddToCart} fullWidth>
             {addedToCart ? "CHECKOUT" : "ADD TO CART"}

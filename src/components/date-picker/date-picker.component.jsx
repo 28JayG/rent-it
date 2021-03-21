@@ -7,7 +7,7 @@ import RentColumn from "./rent-column/rent-column.component";
 
 import "./date-picker.styles.scss";
 
-const DatePicker = () => {
+const DatePicker = ({ item }) => {
   const [state, setState] = useState([
     {
       startDate: new Date(),
@@ -15,6 +15,8 @@ const DatePicker = () => {
       key: "selection",
     },
   ]);
+
+ 
 
   const numberOfDays = (startDate, endDate) =>
     (endDate.getTime() - startDate.getTime()) / (1000 * 3600 * 24);
@@ -45,12 +47,15 @@ const DatePicker = () => {
             <p className="offer-text">
               OFFER:{" "}
               <span className="what-offer">
-                 Earn 200 loyalty points by renting in this product
+                Earn 200 loyalty points by renting in this product
               </span>
             </p>
           </div>
         </div>
-        <RentColumn days={numberOfDays(state[0].startDate, state[0].endDate)} />
+        <RentColumn
+          item={item}
+          days={numberOfDays(state[0].startDate, state[0].endDate)}
+        />
       </div>
     </div>
   );
