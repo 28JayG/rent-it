@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Router, useHistory } from "react-router";
 import { RUPEE_SYMBOL } from "../../../constants/strings";
-import CustomButton from "../../custom-button/custom-button.component";
+import { AppRoutes } from "../../../constants/routes";
 
+import CustomButton from "../../custom-button/custom-button.component";
 import Detail from "./detail/detail.component";
 import LoyaltyPoints from "./loyalty-points/loyalty-points.component";
 
@@ -9,6 +11,7 @@ import "./rent-summary.styles.scss";
 
 const RentSummary = ({ rentDetails }) => {
   const [hideDetails, setHideDetails] = useState(false);
+  const history = useHistory();
 
   const toggleHideDetails = () => setHideDetails(!hideDetails);
 
@@ -29,13 +32,20 @@ const RentSummary = ({ rentDetails }) => {
         <span className="code-here">Enter Code here</span>
       </div>
       <div className="total">
-        <p className="text">Total Payable Amount</p>
+        <p className="text">
+          Total Payable <wbr /> Amount
+        </p>
         <span className="total-amount">{RUPEE_SYMBOL} 10400</span>
       </div>
       <p className="toggle-details" onClick={toggleHideDetails}>
         {hideDetails ? "Show details" : "Hide details"}
       </p>
-      <CustomButton fullWidth>checkout</CustomButton>
+      <CustomButton
+        onClick={() => history.push(AppRoutes.ORDER_CONFIRMATION)}
+        fullWidth
+      >
+        checkout
+      </CustomButton>
     </div>
   );
 };

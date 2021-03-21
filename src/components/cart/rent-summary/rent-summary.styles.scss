@@ -5,6 +5,10 @@
   box-shadow: 0 3px 17px 0 rgba(86, 124, 171, 0.1);
   background-color: #ffffff;
 
+  @media screen and (max-width: 1200px) {
+    padding: 20px;
+  }
+
   h3 {
     margin: 0;
     padding: 0;
@@ -50,6 +54,12 @@
       font-weight: 600;
       margin-right: 10px;
       text-transform: capitalize;
+      text-align: left;
+
+      @media screen and (max-width: 350px) {
+        padding-right: 8px;
+        margin-right: 0;
+      }
     }
 
     .total-amount {
@@ -58,6 +68,10 @@
       font-size: 20px;
       font-weight: 600;
       color: $turquoise;
+
+      @media screen and (max-width: 350px) {
+        font-size: 16px;
+      }
     }
   }
 

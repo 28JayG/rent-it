@@ -1,4 +1,6 @@
 export const AppRoutes = {
   HOME: "/",
-  DETAILS: "/details",
+  ITEMS: "/items",
+  CART: '/cart',
+  ORDER_CONFIRMATION: '/order-confirmation',
 };

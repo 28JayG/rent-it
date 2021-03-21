@@ -6,6 +6,10 @@
   background-color: #ffffff;
   padding: 17px 35px;
 
+  @media screen and (max-width: 350px) {
+    padding: 17px;
+  }
+
   h3 {
     margin: 0;
     padding: 0;

@@ -35,7 +35,7 @@ const ItemCard = ({ item }) => {
           <PricingChip perOf="Month" price="150000" />
         </div>
       </div>
-      <Link to={AppRoutes.DETAILS} className="view-details">
+      <Link to={`${AppRoutes.ITEMS}/4`} className="view-details">
         view details
       </Link>
     </div>

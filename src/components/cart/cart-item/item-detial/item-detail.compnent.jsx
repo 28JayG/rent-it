@@ -9,6 +9,7 @@ const ItemDetail = ({ item }) => (
     </div>
     <div className="detail-column">
       <p className="name">Macbook Pro 16 GB RAM </p>
+      <div style={{ height: '10px'}}/>
       <span className="quantity">
         Quantity: <strong style={{ color: "black" }}>2</strong>
       </span>

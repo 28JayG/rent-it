@@ -8,6 +8,7 @@ import Search from "./pages/search/search.component";
 import "./App.css";
 import OrderConfirmation from "./pages/order-confirmation/order-confirmation.component";
 import ProductView from "./pages/product-view/product-view.component";
+import { AppRoutes } from "./constants/routes";
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
         <Header />
       </div>
       <div className="header-clearence" />
-      <Route path="/" exact component={Search} />
-      <Route path="/order" component={Purchase} />
-      <Route path="/order-confirmation" component={OrderConfirmation} />
+      <Route path={AppRoutes.HOME} exact component={Search} />
+      <Route path={AppRoutes.CART} component={Purchase} />
+      <Route path={AppRoutes.ORDER_CONFIRMATION} component={OrderConfirmation} />
       <Route path="/items/:id" component={ProductView} />
     </div>
   );

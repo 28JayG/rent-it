@@ -16,11 +16,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    position: relative;
+
+    @media screen and (max-width: $screen-md-min) {
+      padding: 10px 0;
+    }
 
     .after-small {
       .menu-button {
         display: none;
-        font-size: 30px;
+        font-size: 24px;
         margin-right: 20px;
 
         @media screen and (max-width: $screen-lg-min) {
@@ -40,12 +45,12 @@
           object-fit: contain;
         }
 
-        @media screen and (max-width: $screen-sm-min) {
-          width: 140px;
+        @media screen and (max-width: $screen-md-min) {
+          width: 120px;
         }
 
         @media screen and (max-width: $screen-xs-min) {
-          width: 100px;
+          width: 80px;
         }
       }
 
@@ -68,6 +73,31 @@
 
         &:last-child {
           padding-right: 0;
+        }
+
+        .cart-icon {
+          position: relative;
+          .image {
+            @media screen and (max-width: $screen-sm-min) {
+              transform: scale(0.8);
+            }
+          }
+          .cart-item-count {
+            position: absolute;
+            transform: translate(50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-color: #f9412e;
+            color: white;
+            display: flex;
+            font-size: 10px;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+          }
         }
       }
     }
