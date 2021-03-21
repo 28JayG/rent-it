@@ -10,8 +10,8 @@ import ScrollToTop from "./components/common/scroll-to-top/scroll-to-top";
 import reportWebVitals from "./reportWebVitals";
 
 import "./index.css";
-import "react-date-range/dist/styles.css"; // main css file
-import "react-date-range/dist/theme/default.css"; // theme css file
+// import "react-date-range/dist/styles.css"; // main css file
+// import "react-date-range/dist/theme/default.css"; // theme css file
 
 ReactDOM.render(
   <React.StrictMode>

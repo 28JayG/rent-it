@@ -5,6 +5,8 @@ import { DateRange } from "react-date-range";
 import { MdLocalOffer } from "react-icons/md";
 import RentColumn from "./rent-column/rent-column.component";
 
+import "./calender-theme/default.css";
+import "./calender-theme/styles.css";
 import "./date-picker.styles.scss";
 
 const DatePicker = ({ item }) => {
@@ -15,8 +17,6 @@ const DatePicker = ({ item }) => {
       key: "selection",
     },
   ]);
-
- 
 
   const numberOfDays = (startDate, endDate) =>
     (endDate.getTime() - startDate.getTime()) / (1000 * 3600 * 24);
@@ -43,13 +43,13 @@ const DatePicker = ({ item }) => {
             <p className="surge-by">Rent is on Surge by 1.2 times</p>
           </div>
           <div className="offer">
-            <MdLocalOffer color={colors.TURQUOISE} />
-            <p className="offer-text">
-              OFFER:{" "}
-              <span className="what-offer">
-                Earn 200 loyalty points by renting in this product
-              </span>
-            </p>
+            <div className="offer-text">
+              <MdLocalOffer color={colors.TURQUOISE} />
+              <p>OFFER:</p>
+            </div>
+            <span className="what-offer">
+              Earn 200 loyalty points by renting in this product
+            </span>
           </div>
         </div>
         <RentColumn

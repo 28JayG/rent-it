@@ -32,7 +32,7 @@
 
     @media screen and (max-width: 600px) {
       grid-template-columns: 1fr;
-      padding: 5px;
+      padding: 10px;
     }
 
     .surge {
@@ -67,18 +67,29 @@
 
     .offer {
       display: flex;
-      width: 120%;
+      width: 100%;
       justify-content: flex-start;
       align-items: center;
 
+      @media screen and (max-width: $screen-xs-min) {
+        flex-direction: column;
+      }
+
       .offer-text {
         color: $turquoise;
-
-        .what-offer {
-          color: $ark-twod;
-          font-size: 12px;
-          font-weight: normal;
+        display: flex;
+        align-items: flex-start;
+        margin-right: 10px;
+        p {
+          padding: 0;
+          margin: 0;
         }
+      }
+      .what-offer {
+        color: $ark-twod;
+        font-size: 12px;
+        font-weight: normal;
+        text-align: left;
       }
     }
   }

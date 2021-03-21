@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 
   .images {
     height: 155px;
@@ -69,8 +70,8 @@
   }
 
   .view-details {
-    background-color: white;
-    color: $ark-twod;
+    background-color: $turquoise;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,15 +80,14 @@
     height: 50px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    border-top: 2px solid #d2d2d2;
 
     &:hover {
-      background-color: $turquoise;
-      color: white;
+      background-color: #0cf2c3;
     }
 
     &:focus {
-      background-color: #008080;
-      color: white;
+      background-color: #07b38f;
     }
   }
 }

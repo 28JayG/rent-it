@@ -14,7 +14,6 @@ const ItemDetails = ({ item }) => {
     isBulkAvailable,
     images,
     name,
-    category,
     pricePerDayInPaise,
     pricePerMonthInPaise,
     pricePerWeekInPaise,
