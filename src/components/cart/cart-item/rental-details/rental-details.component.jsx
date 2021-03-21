@@ -5,18 +5,7 @@ import { RUPEE_SYMBOL } from "../../../../constants/strings";
 import "./rental-details.styles.scss";
 
 const RentalDetails = ({ cartItem }) => {
-  const {
-    description,
-    isBulkAvailable,
-    images,
-    name,
-    category,
-    pricePerDayInPaise,
-    pricePerMonthInPaise,
-    pricePerWeekInPaise,
-    depositInPaise,
-    deliveryPriceInPaise,
-  } = cartItem;
+  const { depositInPaise, deliveryPriceInPaise } = cartItem;
   return (
     <div className="rental-details">
       <div className="rental-detail">

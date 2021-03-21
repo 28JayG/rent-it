@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Router, useHistory } from "react-router";
+import { useHistory } from "react-router";
 import { RUPEE_SYMBOL } from "../../../constants/strings";
 import { AppRoutes } from "../../../constants/routes";
 

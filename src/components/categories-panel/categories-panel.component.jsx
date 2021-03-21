@@ -16,6 +16,11 @@ const CategoriesPanel = () => {
   return (
     <div className="categories-panel">
       {windowSize.width <= 992 && (
+        <div className="search-field-container">
+          <input type="text" placeholder="Seacrh Here..." />
+        </div>
+      )}
+      {windowSize.width <= 992 && (
         <div className="heading user">
           <h4>Hi Jason</h4>
           <hr />

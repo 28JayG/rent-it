@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useWindowSize from "../../hooks/use-window-size.hook";
 import { connect } from "react-redux";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiSearch } from "react-icons/fi";
 import { FaTimes } from "react-icons/fa";
 import Logo from "../../assets/images/brand-logo.png";
 import Cart from "../../assets/images/cart.png";
@@ -32,6 +32,12 @@ const Header = ({ cartItemsCount }) => {
               <img src={Logo} alt="brand logo" />
             </div>
           </Link>
+          {windowSize.width > 992 && (
+            <div className="search-field">
+              <FiSearch className="search-icon" />
+              <input placeholder="Search for laptop, costumes etc" />
+            </div>
+          )}
         </div>
         <ul>
           <li>Hi Jason</li>
