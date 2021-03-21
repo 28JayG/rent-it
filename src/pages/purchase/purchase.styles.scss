@@ -7,3 +7,23 @@
     margin-bottom: 24px;
   }
 }
+
+.empty-cart {
+  width: 85vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(100vh - 160px - 34px - 34px) ;
+
+  .empty-cart-image {
+    height: 400px;
+    // width: 300px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
